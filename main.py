@@ -4,6 +4,8 @@ from openai.types.responses import ResponseTextDeltaEvent
 from dotenv import load_dotenv
 import chainlit as cl
 
+port = int(os.environ.get("PORT", 7860))
+
 load_dotenv()
 
 gemini_api_key = os.getenv("GEMINI_API_KEY")
